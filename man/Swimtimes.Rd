@@ -1,0 +1,43 @@
+\name{Swimtimes}
+\alias{Swimtimes}
+\docType{data}
+\title{Swim Times}
+
+\description{ 
+Swimmers' improvements in seconds for two diets are stored in
+the data frame \code{Swimtimes}. The values in \code{highfat} 
+represent the time improvement in seconds for swimmers on a
+high fat diet, and the values in \code{lowfat} represent the time 
+improvement in seconds for swimmers on a low fat diet.  Data
+are used in Example 10.9.
+}
+\usage{Swimtimes}
+\format{
+  A data frame with 14 observations on the following 2 variables:
+  \describe{
+    \item{\code{lowfat}}{time improvement in seconds}
+    \item{\code{highfat}}{time improvement in seconds}
+  }
+}
+
+\details{
+Times for the thirty-two swimmers for the 200 yard individual 
+medley were taken right after the swimmers' conference meet.
+The swimmers were randomly assigned to follow one of the diets. 
+The group on diet 1 followed a low fat diet the entire
+year but lost two swimmers along the way. The group on diet 2 
+followed the high fat diet the entire year and also lost two 
+swimmers.
+}
+
+\source{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008) 
+\emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
+
+\examples{
+attach(Swimtimes)
+wilcox.test(highfat, lowfat)
+detach(Swimtimes)
+}
+
+\keyword{datasets}

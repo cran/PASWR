@@ -1,0 +1,32 @@
+\name{SBIQ}
+\alias{SBIQ}
+\docType{data}
+\title{County IQ}
+\description{
+A school psychologist administered the Stanford-Binet intelligence quotient (IQ)
+test in two counties. Forty randomly selected, 
+gifted and talented students were
+selected from each county. The Stanford-Binet IQ test is said to follow a normal
+distribution with a mean of 100 and standard deviation of 16.
+}
+\usage{SBIQ}
+\format{
+  A data frame with 40 observations on the following 2 variables:
+  \describe{
+    \item{\code{County1}}{IQ scores for county one}
+    \item{\code{County2}}{IQ scores for county two}
+  }
+}
+
+\source{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
+\emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
+
+\examples{
+attach(SBIQ)
+qqnorm(County1)
+qqline(County1)
+detach(SBIQ)
+}
+
+\keyword{datasets}

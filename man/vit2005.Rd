@@ -1,0 +1,66 @@
+\name{vit2005}
+\alias{vit2005}
+\docType{data}
+\title{Apartments in Vitoria}
+\description{
+Descriptive information and the appraised total price (in Euros)
+for apartments in Vitoria, Spain. 
+}
+\usage{vit2005}
+\format{
+  A data frame with 218 observations on the following 16 variables:
+  \describe{
+    \item{\code{row.labels}}{the number of the observation}
+    \item{\code{totalprice}}{the market total price (in Euros) of the apartment
+    including garage(s) and storage room(s)}
+    \item{\code{area}}{the total living area of the apartment in square meters}
+    \item{\code{zone}}{a factor indicating the neighborhood where the apartment
+    is located with levels \code{Z11}, \code{Z21},
+    \code{Z31}, \code{Z32}, \code{Z34}, \code{Z35}, \code{Z36}, \code{Z37},
+    \code{Z38}, \code{Z41}, \code{Z42}, \code{Z43}, \code{Z44}, \code{Z45},
+    \code{Z46}, \code{Z47}, \code{Z48}, \code{Z49}, \code{Z52}, \code{Z53},
+    \code{Z56}, \code{Z61}, and \code{Z62}.}
+    \item{\code{category}}{a factor indicating the condition of the apartment
+    with levels \code{2A}, \code{2B}, \code{3A},
+    \code{3B}, \code{4A}, \code{4B}, and \code{5A}.  The factors are ordered so
+    that \code{2A} is the best and \code{5A} is the worst.}
+    \item{\code{age}}{age of the aprtment}
+    \item{\code{floor}}{floor on which the apartment is located}
+    \item{\code{rooms}}{total number of rooms including bedrooms, dining room,
+    and kitchen}
+    \item{\code{out}}{a factor indicating the percent of the apartment exposed
+    to the elements. The levels \code{E100}, \code{E75}, \code{E50}, and
+    \code{E25}, correspond to complete exposure, 75\% exposure, 50\% exposure,
+    and 25\% exposure respectively.}
+    \item{\code{conservation}}{is an ordered factor indicating the state of
+    conservation of the apartment.  The levels \code{1A}, \code{2A},
+    \code{2B}, and \code{3A} are ordered from best to worst conservation.}
+    \item{\code{toilets}}{the number of bathrooms}
+    \item{\code{garage}}{the number of garages}
+    \item{\code{elevator}}{indicates the absence (0) or presence (1) of
+    elevators.}
+    \item{\code{streetcategory}}{an ordered factor from best to worst
+    indicating the category of the street with levels \code{S2}, \code{S3},
+    \code{S4}, and \code{S5}}
+    \item{\code{heating}}{a factor indicating the type of heating with levels
+    \code{1A}, \code{3A}, \code{3B}, and \code{4A} which correspond to:
+    no heating, low-standard private heating, high-standard private heating, and
+    central heating respectively.}
+    \item{\code{tras}}{the number of storage rooms outside of the apartment}
+  }
+}
+
+\source{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
+\emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
+
+\examples{
+attach(vit2005)
+Elevator <- as.factor(elevator)
+modTotal <- lm(totalprice~area+Elevator+area:Elevator)
+modSimpl <- lm(totalprice~area)
+anova(modSimpl,modTotal)
+detach(vit2005)
+}
+
+\keyword{datasets}

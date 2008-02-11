@@ -1,0 +1,34 @@
+\name{twoway.plots}
+\alias{twoway.plots}
+
+\title{Exploratory Graphs for Two Factor Designs}
+\description{
+Function creates side-by-side boxplots for each factor, a design plot (means),
+and an interaction plot.
+}
+\usage{
+twoway.plots(Y, fac1, fac2, COL = c("#A9E2FF", "#0080FF"))
+}
+
+\arguments{
+  \item{Y}{response variable}
+  \item{fac1}{factor one}
+  \item{fac2}{factor two}
+  \item{COL}{a vector with two colors}
+}
+
+\author{Alan T. Arnholt}
+
+\seealso{\code{\link{oneway.plots}}}
+\examples{
+# Figure 11.25
+Microamps <- c(280, 290, 285, 300, 310, 295, 270, 285, 290, 230,
+235, 240, 260, 240, 235, 220, 225, 230)
+Glass <- factor(c(rep("Glass I", 9), rep("Glass II", 9)))
+Phosphor <- factor((rep(c(rep("Phosphor A", 3), rep("Phosphor B", 3),
+rep("Phosphor C", 3)), 2)))
+twoway.plots(Microamps,Glass,Phosphor)
+}
+
+\keyword{aplot}
+
