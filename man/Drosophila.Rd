@@ -31,8 +31,6 @@ W. H. Freeman, New York, third edition.
 }
 
 \examples{
-attach(Drosophila)
-summary(aov(Fecundity~Line))
-detach(Drosophila)
+summary(aov(Fecundity~Line, data = Drosophila))
 }
 \keyword{datasets}

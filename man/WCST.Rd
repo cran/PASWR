@@ -25,5 +25,7 @@ frontal lobe lesion generally do poorly on the test.
 \source{
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
-
+\examples{
+densityplot(~score, data = WCST, ref=TRUE)
+}
 \keyword{datasets}

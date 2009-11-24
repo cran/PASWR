@@ -19,9 +19,8 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Wait)
-wilcox.test(wt,mu=6, alternative="less")
-detach(Wait)
+with(data= Wait,
+wilcox.test(wt,mu=6, alternative="less"))
 }
 
 \keyword{datasets}

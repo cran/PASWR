@@ -22,8 +22,9 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Grades)
-plot(sat,gpa)
-detach(Grades)
+# traditional scatterplot
+plot(gpa~sat, data = Grades)
+# trellis scatterplot
+xyplot(gpa~sat, data = Grades, type=c("p","smooth"))
 }
 \keyword{datasets}

@@ -35,9 +35,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Swimtimes)
-wilcox.test(highfat, lowfat)
-detach(Swimtimes)
+with(data = Swimtimes, 
+wilcox.test(highfat, lowfat))
 }
-
 \keyword{datasets}

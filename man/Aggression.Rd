@@ -38,8 +38,8 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Aggression)
-wilcox.test(violence, noviolence,paired=TRUE,alternative="greater")
-detach(Aggression)
+with(data= Aggression, 
+wilcox.test(violence, noviolence, paired=TRUE, 
+alternative="greater"))
 }
 \keyword{datasets}

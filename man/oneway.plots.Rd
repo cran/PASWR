@@ -20,9 +20,7 @@ oneway.plots(Y, fac1, COL = c("#A9E2FF", "#0080FF"))
 
 \seealso{\code{\link{twoway.plots}}}
 \examples{
-attach(Tire)
-oneway.plots(StopDist,tire)
-detach(Tire)
+with(data = Tire, 
+oneway.plots(StopDist, tire))
 }
-
 \keyword{aplot}

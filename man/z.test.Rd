@@ -1,3 +1,5 @@
+% Edited 11/24/09 by ATA
+
 \name{z.test}
 \alias{z.test}
 
@@ -35,11 +37,11 @@ sigma.y = NULL, conf.level = 0.95)
   interval, restricted to lie between zero and one}
 }
 \details{
-\item{One-Sample z-Test}{If \code{y} is \code{NULL}, a one-sample 
-z-test is carried out with \code{x}.}
-\item{Standard Two-Sample z-Test}{If y is not \code{NULL}, a standard 
-two-sample z-test is performed.} 
-}
+If \code{y} is \code{NULL}, a one-sample 
+z-test is carried out with \code{x}.  If y is not \code{NULL}, a standard 
+two-sample z-test is performed.
+} 
+
 \value{A list of class \code{htest}, containing the following components: 
   \item{statistic}{the z-statistic, with names attribute \code{"z"}}
   \item{p.value}{the p-value for the test}
@@ -93,9 +95,8 @@ Snedecor, G. W. and Cochran, W. G. (1980). \emph{Statistical Methods, 7th ed}. A
 \seealso{\code{\link{zsum.test}}, \code{\link{tsum.test}}}
 
 \examples{
-attach(Grocery)
-z.test(x=groceries,sigma.x=30,conf.level=.97)$conf
-detach(Grocery)
+with(data = Grocery,
+z.test(x=groceries,sigma.x=30,conf.level=.97)$conf)
         # Example 8.3 from PASWR.
 
 x <- rnorm(12)
@@ -122,6 +123,7 @@ z.test(x, sigma.x=0.5, y, sigma.y=0.5, conf.level=0.90)
         # The alternative hypothesis is that this difference is not
         # zero.  A 90\% confidence interval for the true difference will 
         # be computed.
+rm(x, y)        
 }
 
 \keyword{htest}

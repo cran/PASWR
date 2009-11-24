@@ -1,4 +1,4 @@
-`twoway.plots` <-
+twoway.plots <-
 function(Y, fac1, fac2, COL=c("#A9E2FF","#0080FF"))
 {
  par(mfrow=c(2,2),pty="m",mar=c(5.1,4.1,4.1,2.1))

@@ -21,4 +21,8 @@ test used to estimate the lifetime of four different circuit designs
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
+\examples{
+bwplot(design~lifetime, data = CircuitDesigns)
+}
+
 \keyword{datasets}

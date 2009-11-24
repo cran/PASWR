@@ -1,4 +1,4 @@
-`normarea` <-
+normarea <-
 function (lower = -Inf, upper = Inf, m, sig)
 {
     Altblue <- "#CDCDED"

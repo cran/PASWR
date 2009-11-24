@@ -28,7 +28,7 @@ Glass <- factor(c(rep("Glass I", 9), rep("Glass II", 9)))
 Phosphor <- factor((rep(c(rep("Phosphor A", 3), rep("Phosphor B", 3),
 rep("Phosphor C", 3)), 2)))
 twoway.plots(Microamps,Glass,Phosphor)
+rm(Microamps, Glass, Phosphor)
 }
-
 \keyword{aplot}
 

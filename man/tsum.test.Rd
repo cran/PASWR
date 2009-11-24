@@ -1,3 +1,5 @@
+% Edited 11/24/09 by ATA
+
 \name{tsum.test}
 \alias{tsum.test}
 
@@ -41,14 +43,13 @@ conf.level = 0.95)
   \item{conf.level}{is the confidence level for the returned confidence 
   interval; it must lie between zero and one.}
 }
+
 \details{
-\item{One-Sample t-Test}{The arguments \code{"two.sided"}, and \code{var.equal} 
-determine the type of test. If \code{y} is \code{NULL}, a one-sample t-test is 
-carried out with \code{x}.} 
-\item{Standard Two-Sample t-Test}{If y is not \code{NULL}, either a standard or 
+If \code{y} is \code{NULL}, a one-sample t-test is 
+carried out with \code{x}. If y is not \code{NULL}, either a standard or 
 Welch modified two-sample t-test is performed, depending on whether \code{var.equal} is \code{TRUE} 
 or \code{FALSE}. 
-}}
+}
 
 \value{A list of class \code{htest}, containing the following components: 
   \item{statistic}{the t-statistic, with names attribute \code{"t"}}
@@ -66,14 +67,14 @@ or \code{FALSE}.
   represented by \code{Inf}.} 
   \item{estimate}{vector of length 1 or 2, giving the sample mean(s) 
   or mean of differences; these estimate the corresponding population 
-  parameters. Component \code{estimate} has a names attribute describing its elements. }
-  \item{null.value} {the value of the mean or difference in means specified by 
+  parameters. Component \code{estimate} has a names attribute describing its elements.}
+  \item{null.value}{the value of the mean or difference in means specified by 
   the null hypothesis. This equals the input argument \code{mu}. Component 
   \code{null.value} has a names attribute describing its elements.}
   \item{alternative}{records the value of the input argument alternative: 
-  \code{"greater"} , \code{"less"} or \code{"two.sided"}. }
+  \code{"greater"} , \code{"less"} or \code{"two.sided"}.}
   \item{data.name}{a character string (vector of length 1) containing 
-  the names x and y for the two summarized samples. } 
+  the names x and y for the two summarized samples.} 
 }
 
 \section{Null Hypothesis}{For the one-sample t-test, the null hypothesis is that the mean of 
@@ -102,7 +103,7 @@ non-robust with respect to average length, toward these same types of distributi
 related confidence interval (returned component \code{conf.int}) can be obtained in the usual 
 way by inverting the expression for the test statistic. Note that, as explained 
 under the description of \code{conf.int}, the confidence interval will be half-infinite when 
-alternative is not \code{"two.sided"} ; infinity will be represented by \code{Inf}. }
+alternative is not \code{"two.sided"} ; infinity will be represented by \code{Inf}.}
 
 
 \references{

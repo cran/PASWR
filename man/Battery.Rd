@@ -24,9 +24,9 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Battery)
-qqnorm(facilityA)
-qqline(facilityA)
-detach(Battery)
+with(data = Battery, 
+qqnorm(facilityA))
+with(data = Battery, 
+qqline(facilityA))
 }
 \keyword{datasets}

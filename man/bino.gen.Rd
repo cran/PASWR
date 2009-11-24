@@ -24,5 +24,4 @@ bino.gen(samples, n, pi)
 \examples{
 bino.gen(1000, 20, 0.75)
 }
-
 \keyword{distribution}

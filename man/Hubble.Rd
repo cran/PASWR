@@ -25,10 +25,11 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Hubble)
-TD <- Team1 -Team2
-qqnorm(TD)
-qqline(TD)
-detach(Hubble)
+with(data = Hubble, 
+qqnorm(Team1 - Team2))
+with(data = Hubble, 
+qqline(Team1 - Team2))
+# Trellis Approach
+qqmath(~(Team1 - Team2), data = Hubble, type=c("p","r"))
 }
 \keyword{datasets}

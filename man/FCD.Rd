@@ -29,9 +29,8 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 
 \examples{
 # Figure 11.12
-attach(FCD)
-FCD.aov <- aov(Weight~Diet)
+FCD.aov <- aov(Weight~Diet, data = FCD)
 checking.plots(FCD.aov)
-detach(FCD)
+rm(FCD.aov)
 }
 \keyword{datasets}

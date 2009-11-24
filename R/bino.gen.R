@@ -1,4 +1,4 @@
-`bino.gen` <-
+bino.gen <-
 function(samples, n, pi) {
   values <- sample(c(0,1), samples*n, replace=TRUE, prob=c(pi,1-pi))
   value.mat <- matrix(values, ncol=n)

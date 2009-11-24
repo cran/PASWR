@@ -32,6 +32,5 @@ ul[i] <- a[i] + qnorm(0.975)*sqrt(1/n)
 }
 interval.plot(ll,ul)
 }
-
 \keyword{misc}
 

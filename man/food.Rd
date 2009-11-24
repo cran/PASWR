@@ -20,8 +20,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(food)
-summary(aov(shear~freezer))
-detach(food)
+summary(aov(shear~freezer, data = food))
 }
 \keyword{datasets}

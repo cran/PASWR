@@ -25,5 +25,7 @@ in \code{EURD}.
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
-
+\examples{
+qqmath(~(RD2003 - RD2002), data = EURD, type=c("p","r"))
+}
 \keyword{datasets}

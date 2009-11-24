@@ -25,8 +25,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Tennis)
-boxplot(Speed1,Speed2)
-detach(Tennis)
+with(data = Tennis, 
+boxplot(Speed1, Speed2))
 }
 \keyword{datasets}

@@ -1,4 +1,4 @@
-`wilcoxE.test` <-
+wilcoxE.test <-
 function(x, y = NULL, mu = 0, paired = FALSE, alternative="two.sided", conf.level=0.95)
 # Computes Exact distribution of Wilcoxon Signed Rank Test and Wilcoxon Sum Rank Test.  In
 # the presence of ties, computes the exact conditional distribution of the Wilcoxon Signed

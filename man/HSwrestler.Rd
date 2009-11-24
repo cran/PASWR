@@ -36,11 +36,9 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.} 
 
 \examples{
-attach(HSwrestler)
-FAT <- c(HWFAT,TANFAT,SKFAT)
-GROUP <- factor(rep(c("HWFAT","TANFAT","SKFAT"),rep(78,3)))
-BLOCK <- factor(rep(1:78,3))
+FAT <- c(HSwrestler$HWFAT, HSwrestler$TANFAT, HSwrestler$SKFAT)
+GROUP <- factor(rep(c("HWFAT", "TANFAT", "SKFAT"), rep(78, 3)))
+BLOCK <- factor(rep(1:78, 3))
 friedman.test(FAT~GROUP|BLOCK)
-detach(HSwrestler)
 }
 \keyword{datasets}

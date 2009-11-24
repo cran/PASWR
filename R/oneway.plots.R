@@ -1,4 +1,4 @@
-`oneway.plots` <-
+oneway.plots <-
 function(Y,fac1,COL=c("#A9E2FF","#0080FF"))
 {
 par(mfrow=c(1,3),pty="s")

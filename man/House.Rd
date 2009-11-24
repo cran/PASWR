@@ -18,9 +18,7 @@ bath houses in Watauga County, NC
 }
 
 \examples{
-attach(House)
-t.test(Price)
-detach(House)
+with(data = House, 
+t.test(Price))
 }
-
 \keyword{datasets}

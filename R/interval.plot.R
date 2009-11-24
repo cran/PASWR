@@ -1,4 +1,4 @@
-`interval.plot` <-
+interval.plot <-
 function(ll, ul)
    {y1 <- ll ; y2<-ul; n <- length(y1)
     plot(y1, type = "n", ylim=c(-.3,.3),xlab = " ",ylab = " ")

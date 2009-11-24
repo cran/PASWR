@@ -26,8 +26,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Refrigerator)
-boxplot(modelA,modelB)
-detach(Refrigerator)
+with(data = Refrigerator, 
+boxplot(modelA, modelB))
 }
 \keyword{datasets}

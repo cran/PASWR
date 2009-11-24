@@ -1,4 +1,4 @@
-`checking.plots` <-
+checking.plots <-
 function(model,n.id=3,COL=c("#0080FF","#A9E2FF"))
 {
   Identify <- function(x,y,n.id=3,AD=0.2)

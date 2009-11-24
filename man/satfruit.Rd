@@ -48,8 +48,9 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(satfruit)
-pairs(satfruit[,15:17])
-detach(satfruit)
+with(data = satfruit, 
+pairs(satfruit[,15:17]))
+# Trellis Approach
+splom(~data.frame(satfruit[,15:17]), data = satfruit)
 }
 \keyword{datasets}

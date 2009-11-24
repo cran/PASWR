@@ -1,4 +1,4 @@
-`CIsim` <-
+CIsim <-
 function (samples = 100, n = 30, parameter = 0.5, sigma = 1,
     conf.level = 0.95, type = "Mean")
 {

@@ -15,7 +15,7 @@ USA's 2004 harvested wheat surface by state
     \code{MT}, \code{NC}, \code{NE}, \code{NY}, \code{OH}, \code{OK},
     \code{OR}, \code{Other}, \code{PA}, \code{SC}, \code{SD}, \code{TN},
     \code{TX}, \code{VA}, \code{WA}, and \code{WI}}
-    \item{\code{ACRES}}{wheat surface area measured in acres}
+    \item{\code{ACRES}}{wheat surface area measured in 1000s of acres}
   }
 }
 
@@ -24,9 +24,8 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(wheatUSA2004)
-hist(ACRES)
-detach(wheatUSA2004)
+with(data = wheatUSA2004,
+hist(ACRES))
 }
 
 \keyword{datasets}

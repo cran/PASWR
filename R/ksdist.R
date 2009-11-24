@@ -1,4 +1,4 @@
-`ksdist` <-
+ksdist <-
 function (n = 10, sims = 10000, alpha = 0.05)
 {
     Dn <- replicate(sims, ks.test(rnorm(n), pnorm)$statistic)

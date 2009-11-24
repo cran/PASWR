@@ -22,8 +22,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(glucose)
-boxplot(Old, New)
-detach(glucose)
+with(data = glucose, 
+boxplot(Old, New))
 }
 \keyword{datasets}

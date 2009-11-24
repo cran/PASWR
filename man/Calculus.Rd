@@ -22,8 +22,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Calculus)
-z.test(x=Yes.Calculus,y=No.Calculus,sigma.x=5,sigma.y=12)$conf
-detach(Calculus)
+with(data = Calculus,
+z.test(x=Yes.Calculus,y=No.Calculus,sigma.x=5,sigma.y=12)$conf )
 }
 \keyword{datasets}

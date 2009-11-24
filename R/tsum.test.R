@@ -1,4 +1,4 @@
-`tsum.test` <-
+tsum.test <-
 function(mean.x, s.x = NULL, n.x = NULL, mean.y = NULL, s.y = NULL, n.y = NULL,
     alternative = "two.sided", mu = 0, var.equal = FALSE, conf.level = 0.95)
 {

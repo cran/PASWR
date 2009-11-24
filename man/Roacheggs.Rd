@@ -25,10 +25,15 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Roacheggs)
 p <- seq(0.1, 0.9, 0.001)
-negloglike <- function(p){-(sum(eggs)*log(p) + sum(1-eggs)*log(1-p))}
+negloglike <- function(p){
+-(sum(Roacheggs$eggs)*log(p) + sum(1-Roacheggs$eggs)*log(1-p))
+}
 nlm(negloglike, .2)
-detach(Roacheggs)
+rm(negloglike)
 }
 \keyword{datasets}
+
+
+
+

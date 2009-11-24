@@ -27,8 +27,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(SDS4)
-hist(Times)
-detach(SDS4)
+with(data = SDS4, hist(Times))
 }
 \keyword{datasets}

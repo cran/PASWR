@@ -18,5 +18,8 @@ produced in 12 randomly selected European countries during 2003
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
-
+\examples{
+with(TOE,
+plot(density(energy)))
+}
 \keyword{datasets}

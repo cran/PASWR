@@ -24,10 +24,9 @@ checking.plots(model, n.id = 3, COL = c("#0080FF", "#A9E2FF"))
 
 \examples{
 # Figure 11.10
-attach(Tire)
-mod.aov <- aov(StopDist~tire)
-checking.plots(mod.aov)
-detach(Tire)
+mod.aov <- aov(StopDist~tire, data = Tire)
+checking.plots(mod.aov) 
+rm(mod.aov)
 }
 
 \keyword{regression}

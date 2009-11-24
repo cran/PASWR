@@ -25,9 +25,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(URLaddress)
-plot(megasd,mconnected)
-detach(URLaddress)
+xyplot(mconnected~megasd, data = URLaddress, type=c("p","r"))
 }
 
 \keyword{datasets}

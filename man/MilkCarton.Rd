@@ -21,8 +21,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(MilkCarton)
-boxplot(Hgallon,Wgallon)
-detach(MilkCarton)
+with(data = MilkCarton, 
+boxplot(Hgallon, Wgallon))
 }
 \keyword{datasets}

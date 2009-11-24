@@ -20,8 +20,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(LostR)
-plot(NumberSick,LostRevenue)
-detach(LostR)
+xyplot(LostRevenue~NumberSick, data = LostR, type=c("p","r"))
 }
 \keyword{datasets}

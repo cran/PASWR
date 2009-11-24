@@ -20,8 +20,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Formula1)
-boxplot(Team1, Team2)
-detach(Formula1)
+with(data = Formula1, 
+boxplot(Team1, Team2))
 }
 \keyword{datasets}

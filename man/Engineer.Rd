@@ -20,8 +20,8 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Engineer)
-boxplot(split(salary,university))
-detach(Engineer)
+boxplot(salary~university, data = Engineer, horizontal=TRUE)
+# Trellis Approach
+bwplot(university~salary, data = Engineer)
 }
 \keyword{datasets}

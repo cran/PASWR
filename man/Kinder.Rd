@@ -22,8 +22,9 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 
 \examples{
 # Figure 12.10
-attach(Kinder)
-plot(wt,ht)
-detach(Kinder)
+with(data = Kinder, 
+plot(wt, ht))
+# Trellis Approach
+xyplot(ht~wt, data = Kinder)
 }
 \keyword{datasets}

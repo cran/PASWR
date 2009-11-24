@@ -24,9 +24,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Stschool)
-t.test(X, Y, var.equal=TRUE)
-detach(Stschool)
+with(data = Stschool, 
+t.test(X, Y, var.equal=TRUE))
 }
-
 \keyword{datasets}

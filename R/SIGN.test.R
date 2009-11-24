@@ -1,4 +1,4 @@
-`SIGN.test` <-
+SIGN.test <-
 function(x, y = NULL, md = 0, alternative = "two.sided", conf.level = 0.95)
 {
     choices <- c("two.sided", "greater", "less")

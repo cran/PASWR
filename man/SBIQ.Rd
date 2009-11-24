@@ -23,10 +23,9 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(SBIQ)
-qqnorm(County1)
-qqline(County1)
-detach(SBIQ)
+with(data = SBIQ, qqnorm(County1))
+with(data = SBIQ, qqline(County1))
+# Trellis Approach
+qqmath(~County1, data = SBIQ, type=c("p","r"))
 }
-
 \keyword{datasets}

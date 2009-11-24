@@ -22,6 +22,5 @@ ksdist(n = 10, sims = 10000, alpha = 0.05)
 \examples{
 ksdist(n = 10, sims = 10000, alpha = 0.05)
 }
-
 \keyword{distribution}
 

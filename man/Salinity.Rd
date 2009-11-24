@@ -23,8 +23,7 @@ John Wiley, New York.
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 \examples{
-attach(Salinity)
-EDA(salinity)
-detach(Salinity)
+with(data = Salinity, 
+EDA(salinity))
 }
 \keyword{datasets}

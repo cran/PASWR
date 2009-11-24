@@ -27,9 +27,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(CosAma)
-DIFF <- Cosmed - Amatek
-boxplot(DIFF)
-detach(CosAma)
+bwplot(~(Cosmed-Amatek), data=CosAma)
 }
 \keyword{datasets}

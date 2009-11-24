@@ -40,8 +40,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(sunflower)
-summary(aov(yield~stage+defoli+stage:defoli))
-detach(sunflower)
+summary(aov(yield~stage+defoli+stage:defoli, data = sunflower))
 }
 \keyword{datasets}

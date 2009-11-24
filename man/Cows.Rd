@@ -28,8 +28,6 @@ Sokal, R. R. and Rohlf, F. J. (1994) \emph{Biometry}.
 W. H. Freeman, New York, third edition.
 }
 \examples{
-attach(Cows)
-summary(aov(butterfat~breed+age))
-detach(Cows)
+summary(aov(butterfat~breed+age, data = Cows))
 }
 \keyword{datasets}

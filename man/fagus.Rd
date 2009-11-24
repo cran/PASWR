@@ -30,8 +30,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.} 
 
 \examples{
-attach(fagus)
-boxplot(carbon~type)
-detach(fagus)
+boxplot(carbon~type, data=fagus)
 }
 \keyword{datasets}

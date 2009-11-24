@@ -11,8 +11,8 @@ Statistics with R}
 \tabular{ll}{
 Package: \tab PASWR\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2008-02-11\cr
+Version: \tab 1.1\cr
+Date: \tab 2009-11-24\cr
 License: \tab GPL (>=2) \cr
 }
 Comprehensive and engineering-oriented, \emph{Probability and Statistics 

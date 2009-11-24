@@ -51,9 +51,7 @@ Analysis}.  Springer.
 }
 
 \examples{
-attach(titanic3)
-table(pclass, sex)
-detach(titanic3)
+with(titanic3,
+table(pclass, sex))
 }
-
 \keyword{datasets}

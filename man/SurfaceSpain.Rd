@@ -23,8 +23,9 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(SurfaceSpain)
-barplot(surface,names.arg=community,las=2)
-detach(SurfaceSpain)
+with(data = SurfaceSpain,
+barplot(surface, names.arg=community, las=2))
+# Trellis Approach
+barchart(community~surface, data=SurfaceSpain)
 }
 \keyword{datasets}

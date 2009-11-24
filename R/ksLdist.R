@@ -1,4 +1,4 @@
-`ksLdist` <-
+ksLdist <-
 function (n = 10, sims = 1000, alpha = 0.05)
 {
     Dn <- c()

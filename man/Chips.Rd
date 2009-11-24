@@ -22,13 +22,17 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Chips)
 par(mfrow=c(1,2))
-qqnorm(techniqueI)
-qqline(techniqueI)
-qqnorm(techniqueII)
-qqline(techniqueII)
+with(data = Chips, qqnorm(techniqueI))
+with(data = Chips, qqline(techniqueI))
+with(data = Chips, qqnorm(techniqueII))
+with(data = Chips, qqline(techniqueII))
 par(mfrow=c(1,1))
-detach(Chips)
+# Trellis Approach
+graph1 <- qqmath(~techniqueI, data = Chips, type=c("p","r"))
+graph2 <- qqmath(~techniqueII, data = Chips, type=c("p","r"))
+print(graph1, split=c(1, 1, 2, 1), more = TRUE)
+print(graph2, split=c(2, 1, 2, 1), more = FALSE)
+rm(graph1, graph2)
 }
 \keyword{datasets}

@@ -23,5 +23,4 @@ ksLdist(n = 10, sims = 1000, alpha = 0.05)
 # Figure 10.15
 ksLdist(sims=10000,n=10)
 }
-
 \keyword{distribution}

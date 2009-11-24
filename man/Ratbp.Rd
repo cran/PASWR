@@ -28,8 +28,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Ratbp)
-boxplot(Treat,Cont)
-detach(Ratbp)
+with(data = Ratbp, 
+boxplot(Treat, Cont))
 }
 \keyword{datasets}

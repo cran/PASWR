@@ -20,9 +20,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 
 
 \examples{
-attach(InsurQuotes)
-t.test(companyA,companyB)
-detach(InsurQuotes)
+with(data = InsurQuotes, 
+t.test(companyA, companyB))
 }
-
 \keyword{datasets}

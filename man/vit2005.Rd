@@ -55,12 +55,12 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(vit2005)
-Elevator <- as.factor(elevator)
-modTotal <- lm(totalprice~area+Elevator+area:Elevator)
-modSimpl <- lm(totalprice~area)
+modTotal <- lm(totalprice~area+as.factor(elevator) + 
+area:as.factor(elevator), data = vit2005)
+modSimpl <- lm(totalprice~area, data = vit2005)
 anova(modSimpl,modTotal)
-detach(vit2005)
+rm(modSimpl, modTotal)
 }
-
 \keyword{datasets}
+
+

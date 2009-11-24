@@ -34,8 +34,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Phenyl)
-t.test(Q10.1,conf.level=.99)
-detach(Phenyl)
+with(data = Phenyl, 
+t.test(Q10.1,conf.level=.99))
 }
 \keyword{datasets}

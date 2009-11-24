@@ -19,9 +19,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(AptSize)
-boxplot(Mendebaldea, SanJorge)
-detach(AptSize)
+with(data = AptSize,
+boxplot(Mendebaldea, SanJorge) )
 }
-
 \keyword{datasets}

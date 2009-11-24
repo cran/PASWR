@@ -28,8 +28,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(StatTemps)
-boxplot(split(temperature,gender))
-detach(StatTemps)
+bwplot(gender~temperature, data = StatTemps)
 }
 \keyword{datasets}

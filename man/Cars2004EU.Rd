@@ -30,8 +30,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Cars2004EU)
-plot(cars,deaths)
-detach(Cars2004EU)
+plot(deaths~cars, data = Cars2004EU)
 }
 \keyword{datasets}

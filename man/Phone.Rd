@@ -20,8 +20,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Phone)
-SIGN.test(call.time,md=2.1)
-detach(Phone)
+with(data = Phone, 
+SIGN.test(call.time,md=2.1))
 }
 \keyword{datasets}

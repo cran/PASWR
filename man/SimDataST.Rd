@@ -22,8 +22,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(SimDataST)
-plot(x1,Y1)
-detach(SimDataST)
+xyplot(Y1~x1, data = SimDataST, type=c("p","smooth"))
 }
 \keyword{datasets}

@@ -24,12 +24,11 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(TireWear)
 par(mfrow=c(1,2), cex=.8)
-interaction.plot(Treat,Block,Wear, type="b", legend=FALSE)
-interaction.plot(Block,Treat,Wear, type="b", legend=FALSE)
+with(data = TireWear,
+interaction.plot(Treat,Block,Wear, type="b", legend=FALSE))
+with(data = TireWear, 
+interaction.plot(Block,Treat,Wear, type="b", legend=FALSE))
 par(mfrow=c(1,1), cex=1)
-detach(TireWear)
 }
-
 \keyword{datasets}

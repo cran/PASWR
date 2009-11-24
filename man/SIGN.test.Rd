@@ -90,9 +90,8 @@ are exact.}
 
 \seealso{\code{\link{z.test}}, \code{\link{zsum.test}}, \code{\link{tsum.test}}}
 \examples{
-attach(Phone)
-SIGN.test(call.time,md=2.1)
-detach(Phone)
+with(data = Phone,
+SIGN.test(call.time,md=2.1))
         # Example 10.1 from PASWR.
         # Computes two-sided sign-test for the null hypothesis
         # that the population median is 2.1.  The alternative

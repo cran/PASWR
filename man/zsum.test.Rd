@@ -1,5 +1,8 @@
+% Edited 11/24/09 by ATA
+
 \name{zsum.test}
 \alias{zsum.test}
+
 \title{Summarized z-test}
 \description{
  This function is based on the standard normal distribution and 
@@ -46,8 +49,8 @@ conf.level = 0.95)
   represented by \code{Inf}.} 
   \item{estimate}{vector of length 1 or 2, giving the sample mean(s) 
   or mean of differences; these estimate the corresponding population 
-  parameters. Component \code{estimate} has a names attribute describing its elements. }
-  \item{null.value} {the value of the mean or difference in means specified by 
+  parameters. Component \code{estimate} has a names attribute describing its elements.}
+  \item{null.value}{the value of the mean or difference in means specified by 
   the null hypothesis. This equals the input argument \code{mu}. Component 
   \code{null.value} has a names attribute describing its elements.}
   \item{alternative}{records the value of the input argument alternative: 
@@ -69,9 +72,11 @@ from \code{mu} (i.e., \code{"greater"} , \code{"less"}, \code{"two.sided"} ).
 \section{Test Assumptions}{The assumption of normality for the underlying distribution or a sufficiently 
 large sample size is required along with the population standard deviation to 
 use Z procedures.}
+
 \details{
-\item{One-Sample z-Test.}{If \code{y} is \code{NULL} , a one-sample z-test is carried out with \code{x} .}
-\item{Standard Two-Sample z-Test.}{If y is not \code{NULL}, a standard two-sample z-test is performed. }}
+If \code{y} is \code{NULL} , a one-sample z-test is carried out with \code{x} .
+If y is not \code{NULL}, a standard two-sample z-test is performed.
+}
 
 
 \section{Confidence Intervals}{For each of the above tests, an expression for the 
@@ -125,6 +130,7 @@ conf.level=0.90)
         # The alternative hypothesis is that this difference is not
         # zero.  A 90\% confidence interval for the true difference will 
         # be computed.  Note: returns same answer as:
-z.test(x, sigma.x=0.5, y, sigma.y=0.5, conf.level=0.90)        
+z.test(x, sigma.x=0.5, y, sigma.y=0.5, conf.level=0.90)
+rm(x, y)        
 }
 \keyword{htest}

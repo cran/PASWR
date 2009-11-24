@@ -33,9 +33,9 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(EPIDURAL)
-Teasy <- factor(Ease,levels=c("Easy","Difficult","Impossible"))
-X <- table(Doctor, Teasy)
+EPIDURAL$Teasy <-  factor(EPIDURAL$Ease, 
+levels=c("Easy","Difficult","Impossible"))
+X <- table(EPIDURAL$Doctor, EPIDURAL$Teasy)
 X
 par(mfrow=c(2,2)) # Figure 2.12
 barplot(X,
@@ -47,6 +47,7 @@ main="Barplot where Doctor is Grouped \n within Levels of Palpitation")
 barplot(t(X), beside=TRUE,
 main="Barplot where Levels of Palpitation \n is Grouped within Doctor")
 par(mfrow=c(1,1))
-detach(EPIDURAL)
+rm(X)
 }
 \keyword{datasets}
+

@@ -18,9 +18,8 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(TestScores)
-EDA(grade)
-detach(TestScores)
+with(data = TestScores,
+EDA(grade))
 }
 
 \keyword{datasets}

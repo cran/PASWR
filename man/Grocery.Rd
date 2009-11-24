@@ -23,8 +23,7 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(Grocery)
-z.test(x=groceries,sigma.x=30,conf.level=.97)$conf
-detach(Grocery)
+with(data = Grocery, 
+z.test(x=groceries,sigma.x=30,conf.level=.97)$conf)
 }
 \keyword{datasets}

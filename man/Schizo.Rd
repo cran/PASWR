@@ -31,4 +31,9 @@ b-Hydroxylase Activity and Treatment Response.} \emph{Science},
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
+\examples{
+with(data=Schizo, boxplot(nonpsychotic, psychotic,
+names=c("nonpsychotic", "psychotic"), col=c("green","red")))
+}
+
 \keyword{datasets}

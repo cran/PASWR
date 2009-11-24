@@ -19,9 +19,17 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(GD)
-hist(attf,prob=TRUE)
-lines(density(attf))
-detach(GD)
+with(data = GD, 
+hist(attf,prob=TRUE))
+with(data = GD, 
+lines(density(attf)))
+# Trellis Approach
+histogram(~attf, data = GD, type="density",
+panel = function(x, ...) {
+panel.histogram(x, ...)
+panel.densityplot(x, col = "blue", plot.points=TRUE, lwd=2)
+} )
 }
 \keyword{datasets}
+
+

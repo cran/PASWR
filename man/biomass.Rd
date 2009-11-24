@@ -27,8 +27,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.} 
 
 \examples{
-attach(biomass)
-plot(log(Dn),log(PSA))
-detach(biomass)
+plot(log(PSA)~log(Dn), data=biomass)
 }
 \keyword{datasets}

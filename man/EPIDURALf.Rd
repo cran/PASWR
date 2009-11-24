@@ -33,8 +33,6 @@ Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 \emph{Probability and Statistics with R}. Chapman & Hall/CRC.}
 
 \examples{
-attach(EPIDURALf)
-boxplot(OC~Treatment)
-detach(EPIDURALf)
+boxplot(OC~Treatment, data = EPIDURALf)
 }
 \keyword{datasets}
